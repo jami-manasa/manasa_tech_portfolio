@@ -26,6 +26,9 @@
         <nav class="topbar">
           <div class="brand">MJ / Data Routes</div>
           <div class="topbar-links">
+            <a href="#summary">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
             <a href="mailto:jami.manasa02@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/jami-manasa/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="assets/manasa-jami-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -35,19 +38,34 @@
         <div class="hero-layout">
           <div class="hero-copy">
             <p class="eyebrow">Portfolio stop 01</p>
+            <div class="welcome-guide" aria-live="polite" aria-hidden="true">
+              <div class="guide-avatar" aria-hidden="true">
+                <span class="guide-back-hair"></span>
+                <span class="guide-hair"></span>
+                <span class="guide-face"></span>
+                <span class="guide-eye guide-eye-left"></span>
+                <span class="guide-eye guide-eye-right"></span>
+                <span class="guide-smile"></span>
+                <span class="guide-body"></span>
+              </div>
+              <div class="guide-bubble">
+                <span class="guide-tag">Welcome aboard</span>
+                <p>Hey, this is Manasa. Enjoy the ride through my world of data engineering and AI.</p>
+              </div>
+            </div>
             <h1>
               Data engineer.
               <span>AI-driven builder of scalable cloud systems.</span>
             </h1>
             <p class="lede">
-              I am Manasa Jami, a data engineer and AI-focused professional with 5+ years
-              of experience across Azure, AWS, and GCP. I build modern data platforms,
-              analytics pipelines, and intelligent applications that turn raw information
-              into business-ready insight.
+              I build cloud journeys where raw data becomes decision-ready intelligence.
+              With 5+ years across Azure, AWS, and GCP, I design scalable pipelines,
+              analytics experiences, and AI-powered products that feel both technically
+              sharp and genuinely useful.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#summary">Start the ride</a>
+              <a class="button button-primary start-ride" href="#summary">Start the ride</a>
               <a class="button button-secondary" href="assets/manasa-jami-resume.pdf" target="_blank" rel="noreferrer">
                 Download resume
               </a>
@@ -104,6 +122,16 @@
       </header>
 
       <main>
+        <nav class="section-rail section" aria-label="Section navigation">
+          <a class="rail-link" href="#summary">About</a>
+          <a class="rail-link" href="#skills">Skills</a>
+          <a class="rail-link" href="#experience">Experience</a>
+          <a class="rail-link" href="#projects">Projects</a>
+          <a class="rail-link" href="#certifications">Certifications</a>
+          <a class="rail-link" href="#education">Education</a>
+          <a class="rail-link" href="#contact">Contact</a>
+        </nav>
+
         <section class="section stop-card" id="summary" data-stop="About">
           <div class="stop-sign">
             <span class="stop-label">Stop 02</span>
@@ -145,7 +173,17 @@
               <button class="slide-tab" type="button" data-target="skill-ai">AI + Analytics</button>
               <button class="slide-tab" type="button" data-target="skill-style">Style</button>
             </div>
-            <div class="slide-stage">
+            <div class="slide-controls">
+              <div class="slide-meta">
+                <span class="slide-kicker">Skill route</span>
+                <strong class="slide-count" data-count-for="skills">01 / 06</strong>
+              </div>
+              <div class="slide-arrows">
+                <button class="slide-arrow" type="button" data-prev-for="skills" aria-label="Previous skill">&larr;</button>
+                <button class="slide-arrow" type="button" data-next-for="skills" aria-label="Next skill">&rarr;</button>
+              </div>
+            </div>
+            <div class="slide-stage" data-stage="skills">
               <article class="skill-card slide-panel is-active" id="skill-cloud">
                 <h3>Cloud Platforms</h3>
                 <p>AWS, Azure Data Factory, Databricks, Synapse, Blob Storage, EC2, S3, and BigQuery.</p>
@@ -185,7 +223,17 @@
               <button class="slide-tab" type="button" data-target="exp-ucm">UCM</button>
               <button class="slide-tab" type="button" data-target="exp-cloud">Cloud Earl</button>
             </div>
-            <div class="slide-stage">
+            <div class="slide-controls">
+              <div class="slide-meta">
+                <span class="slide-kicker">Career route</span>
+                <strong class="slide-count" data-count-for="experience">01 / 03</strong>
+              </div>
+              <div class="slide-arrows">
+                <button class="slide-arrow" type="button" data-prev-for="experience" aria-label="Previous experience">&larr;</button>
+                <button class="slide-arrow" type="button" data-next-for="experience" aria-label="Next experience">&rarr;</button>
+              </div>
+            </div>
+            <div class="slide-stage" data-stage="experience">
               <article class="timeline-card slide-panel is-active" id="exp-delta">
                 <div class="timeline-meta">
                   <span>Aug 2025 - Present</span>
@@ -245,7 +293,17 @@
               <button class="slide-tab" type="button" data-target="project-vibe">VibeFlow</button>
               <button class="slide-tab" type="button" data-target="project-tableau">Tableau</button>
             </div>
-            <div class="slide-stage">
+            <div class="slide-controls">
+              <div class="slide-meta">
+                <span class="slide-kicker">Project route</span>
+                <strong class="slide-count" data-count-for="projects">01 / 05</strong>
+              </div>
+              <div class="slide-arrows">
+                <button class="slide-arrow" type="button" data-prev-for="projects" aria-label="Previous project">&larr;</button>
+                <button class="slide-arrow" type="button" data-next-for="projects" aria-label="Next project">&rarr;</button>
+              </div>
+            </div>
+            <div class="slide-stage" data-stage="projects">
               <article class="project-card slide-panel is-active" id="project-mule">
                 <p class="project-tag">Full-stack community platform</p>
                 <h3>MuleConnect - UCM Alumni & Student Community</h3>
@@ -333,7 +391,17 @@
               <button class="slide-tab" type="button" data-target="cert-ibm-python">IBM Python</button>
               <button class="slide-tab" type="button" data-target="cert-ml">ML</button>
             </div>
-            <div class="slide-stage">
+            <div class="slide-controls">
+              <div class="slide-meta">
+                <span class="slide-kicker">Credential route</span>
+                <strong class="slide-count" data-count-for="certifications">01 / 05</strong>
+              </div>
+              <div class="slide-arrows">
+                <button class="slide-arrow" type="button" data-prev-for="certifications" aria-label="Previous certification">&larr;</button>
+                <button class="slide-arrow" type="button" data-next-for="certifications" aria-label="Next certification">&rarr;</button>
+              </div>
+            </div>
+            <div class="slide-stage" data-stage="certifications">
               <article class="cert-card cert-card-featured slide-panel is-active" id="cert-aws">
                 <p class="project-tag">Featured credential</p>
                 <h3>AWS Certified AI Practitioner</h3>
@@ -377,7 +445,17 @@
               <button class="slide-tab" type="button" data-target="edu-btech">B.Tech</button>
               <button class="slide-tab" type="button" data-target="edu-quote">Mindset</button>
             </div>
-            <div class="slide-stage">
+            <div class="slide-controls">
+              <div class="slide-meta">
+                <span class="slide-kicker">Learning route</span>
+                <strong class="slide-count" data-count-for="education">01 / 03</strong>
+              </div>
+              <div class="slide-arrows">
+                <button class="slide-arrow" type="button" data-prev-for="education" aria-label="Previous education item">&larr;</button>
+                <button class="slide-arrow" type="button" data-next-for="education" aria-label="Next education item">&rarr;</button>
+              </div>
+            </div>
+            <div class="slide-stage" data-stage="education">
               <article class="education-card slide-panel is-active" id="edu-masters">
                 <p class="education-year">Aug 2023 - May 2025</p>
                 <h3>Master's Degree, Computer Science</h3>
